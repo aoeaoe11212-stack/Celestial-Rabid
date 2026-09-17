@@ -1,99 +1,65 @@
-/* =========================================
+/* =========================================================
    CELESTIAL RABID
-   Main JavaScript
-   ========================================= */
+   One Page Website JavaScript
+   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /*
-     * Navbar
-     */
+    /* =====================================================
+       NAVBAR SCROLL EFFECT
+       ===================================================== */
 
     const navbar = document.querySelector(".navbar");
 
-    const updateNavbar = () => {
-
+    function updateNavbar() {
         if (window.scrollY > 30) {
-
             navbar.classList.add("scrolled");
-
-            navbar.style.background =
-                "rgba(7, 8, 13, 0.90)";
-
         } else {
-
             navbar.classList.remove("scrolled");
-
-            navbar.style.background =
-                "rgba(7, 8, 13, 0.65)";
         }
-    };
-
-    window.addEventListener("scroll", updateNavbar);
+    }
 
     updateNavbar();
 
+    window.addEventListener("scroll", updateNavbar);
 
-    /*
-     * Smooth scrolling
-     */
 
-    document
-        .querySelectorAll('a[href^="#"]')
-        .forEach(link => {
+    /* =====================================================
+       MOBILE MENU
+       ===================================================== */
 
-            link.addEventListener("click", event => {
+    const menuButton = document.querySelector(".menu-button");
+    const navLinks = document.querySelector(".nav-links");
 
-                const targetId =
-                    link.getAttribute("href");
+    if (menuButton && navLinks) {
 
-                if (targetId === "#") {
-                    return;
-                }
-
-                const target =
-                    document.querySelector(targetId);
-
-                if (!target) {
-                    return;
-                }
-
-                event.preventDefault();
-
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-
-            });
-
+        menuButton.addEventListener("click", () => {
+            navLinks.classList.toggle("mobile-open");
         });
 
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("mobile-open");
+            });
+        });
 
-    /*
-     * Scroll reveal
-     */
+    }
 
-    const revealElements = document.querySelectorAll(
-        ".game-card, .about-layout, .join-card"
-    );
 
-    revealElements.forEach(element => {
-        element.classList.add("reveal");
-    });
+    /* =====================================================
+       REVEAL ON SCROLL
+       ===================================================== */
 
+    const revealElements = document.querySelectorAll(".reveal");
 
     const observer = new IntersectionObserver(
-        entries => {
+        (entries) => {
 
             entries.forEach(entry => {
 
                 if (entry.isIntersecting) {
-
-                    entry.target.classList.add("show");
-
+                    entry.target.classList.add("visible");
                     observer.unobserve(entry.target);
-
                 }
 
             });
@@ -104,9 +70,58 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     );
 
-
     revealElements.forEach(element => {
         observer.observe(element);
     });
+
+
+    /* =====================================================
+       SMOOTH ANCHOR SCROLLING
+       ===================================================== */
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+        link.addEventListener("click", function (event) {
+
+            const targetId = this.getAttribute("href");
+
+            if (targetId === "#") {
+                return;
+            }
+
+            const target = document.querySelector(targetId);
+
+            if (!target) {
+                return;
+            }
+
+            event.preventDefault();
+
+            const navbarHeight = navbar.offsetHeight;
+
+            const targetPosition =
+                target.getBoundingClientRect().top +
+                window.scrollY -
+                navbarHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"
+            });
+
+        });
+
+    });
+
+
+    /* =====================================================
+       CURRENT YEAR
+       ===================================================== */
+
+    const yearElement = document.querySelector(".footer-year");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 
 });
