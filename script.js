@@ -1,68 +1,87 @@
 /* =========================================
-   YOUR CLAN
+   CELESTIAL RABID
    Main JavaScript
    ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
     /*
-     * Smooth scrolling
-     */
-
-    const links = document.querySelectorAll('a[href^="#"]');
-
-    links.forEach(link => {
-
-        link.addEventListener("click", event => {
-
-            const targetId = link.getAttribute("href");
-
-            if (targetId === "#") {
-                return;
-            }
-
-            const target = document.querySelector(targetId);
-
-            if (!target) {
-                return;
-            }
-
-            event.preventDefault();
-
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-
-        });
-
-    });
-
-
-    /*
-     * Navbar background
+     * Navbar
      */
 
     const navbar = document.querySelector(".navbar");
 
-    window.addEventListener("scroll", () => {
+    const updateNavbar = () => {
 
         if (window.scrollY > 30) {
-            navbar.style.background = "rgba(8, 9, 11, 0.94)";
-        } else {
-            navbar.style.background = "rgba(8, 9, 11, 0.78)";
-        }
 
-    });
+            navbar.classList.add("scrolled");
+
+            navbar.style.background =
+                "rgba(7, 8, 13, 0.90)";
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+            navbar.style.background =
+                "rgba(7, 8, 13, 0.65)";
+        }
+    };
+
+    window.addEventListener("scroll", updateNavbar);
+
+    updateNavbar();
 
 
     /*
-     * Small reveal animation
+     * Smooth scrolling
+     */
+
+    document
+        .querySelectorAll('a[href^="#"]')
+        .forEach(link => {
+
+            link.addEventListener("click", event => {
+
+                const targetId =
+                    link.getAttribute("href");
+
+                if (targetId === "#") {
+                    return;
+                }
+
+                const target =
+                    document.querySelector(targetId);
+
+                if (!target) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            });
+
+        });
+
+
+    /*
+     * Scroll reveal
      */
 
     const revealElements = document.querySelectorAll(
-        ".game-card, .about-content, .apply-box"
+        ".game-card, .about-layout, .join-card"
     );
+
+    revealElements.forEach(element => {
+        element.classList.add("reveal");
+    });
+
 
     const observer = new IntersectionObserver(
         entries => {
@@ -71,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (entry.isIntersecting) {
 
-                    entry.target.classList.add("visible");
+                    entry.target.classList.add("show");
 
                     observer.unobserve(entry.target);
 
@@ -87,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     revealElements.forEach(element => {
-        element.classList.add("reveal");
         observer.observe(element);
     });
 
