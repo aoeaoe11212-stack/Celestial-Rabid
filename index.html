@@ -4,43 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>YOUR CLAN — Minecraft & Roblox</title>
-    <meta name="description" content="YOUR CLAN — A Minecraft and Roblox gaming community. Apply to join our Discord.">
+    <title>RABID — Celestial Rabid</title>
+
+    <meta
+        name="description"
+        content="Celestial Rabid — A Minecraft and Roblox gaming clan."
+    >
 
     <link rel="icon" href="assets/logo.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <div class="nav-container">
+    <!-- Background -->
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="stars"></div>
+    </div>
 
-            <a href="#" class="logo">
-                <img src="assets/logo.png" alt="Clan Logo">
-                <span>YOUR CLAN</span>
-            </a>
 
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#games">Games</a>
-                <a href="#about">About</a>
-                <a href="#apply">Apply</a>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
 
-            <a
-                href="https://discord.gg/qn4JeJ3TMW"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="discord-button"
-            >
-                <span class="discord-icon">◉</span>
-                Discord
-            </a>
+        <a href="#home" class="brand">
+            <img src="assets/logo.png" alt="RABID Logo">
+            <span>RABID</span>
+        </a>
 
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
         </div>
-    </header>
+
+        <a
+            href="https://discord.gg/qn4JeJ3TMW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-discord"
+        >
+            Discord
+        </a>
+
+    </nav>
 
 
     <main>
@@ -50,111 +58,152 @@
 
             <div class="hero-content">
 
-                <div class="status">
-                    <span class="status-dot"></span>
-                    APPLICATIONS OPEN
+                <div class="eyebrow">
+                    <span></span>
+                    CELESTIAL RABID
                 </div>
 
                 <h1>
-                    YOUR <span>CLAN</span>
+                    RABID
                 </h1>
 
+                <div class="gradient-line"></div>
+
                 <p class="hero-subtitle">
-                    MINECRAFT <span>×</span> ROBLOX
+                    MINECRAFT <b>×</b> ROBLOX
                 </p>
 
                 <p class="hero-description">
-                    A gaming community built around playing together,
-                    competing, and having fun.
+                    A gaming clan built around good games,
+                    good people, and good times.
                 </p>
 
-                <div class="hero-buttons">
+                <div class="hero-actions">
 
                     <a
                         href="https://discord.gg/qn4JeJ3TMW"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="primary-button"
+                        class="button primary"
                     >
                         Apply to Join
-                        <span>→</span>
+                        <span>↗</span>
                     </a>
 
-                    <a href="#games" class="secondary-button">
+                    <a href="#games" class="button secondary">
                         Explore
+                        <span>↓</span>
                     </a>
 
                 </div>
 
+                <p class="application-note">
+                    Applications are required to join.
+                </p>
+
             </div>
 
-            <div class="hero-decoration">
-                <div class="pixel pixel-1"></div>
-                <div class="pixel pixel-2"></div>
-                <div class="pixel pixel-3"></div>
-                <div class="pixel pixel-4"></div>
+            <div class="scroll-indicator">
+                <span></span>
+                Scroll
             </div>
 
         </section>
 
 
         <!-- GAMES -->
-        <section class="section games-section" id="games">
+        <section class="games section" id="games">
 
-            <div class="section-heading">
-                <span class="section-label">WHAT WE PLAY</span>
-                <h2>Our Games</h2>
+            <div class="section-top">
+
+                <div>
+                    <div class="section-label">01 / GAMES</div>
+
+                    <h2>
+                        What we <span>play.</span>
+                    </h2>
+                </div>
+
                 <p>
-                    Two games. One community.
+                    Different games.<br>
+                    Same community.
                 </p>
+
             </div>
 
-            <div class="games-grid">
 
-                <!-- MINECRAFT -->
-                <div class="game-card">
+            <div class="games-list">
 
-                    <div class="game-image minecraft-image">
-                        <img src="assets/minecraft.png" alt="Minecraft">
+                <!-- Minecraft -->
+                <a
+                    href="https://www.minecraft.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="game-card"
+                >
+
+                    <div class="game-image">
+                        <img
+                            src="assets/minecraft.png"
+                            alt="Minecraft"
+                        >
                     </div>
 
-                    <div class="game-content">
-                        <span class="game-number">01</span>
+                    <div class="game-info">
 
-                        <h3>Minecraft</h3>
+                        <div class="game-number">
+                            01
+                        </div>
 
-                        <p>
-                            Survival, PvP, SMP and everything
-                            in between.
-                        </p>
+                        <div>
+                            <h3>Minecraft</h3>
 
-                        <span class="game-tag">MINECRAFT</span>
+                            <p>
+                                SMP · Survival · PvP
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">↗</span>
+
                     </div>
 
-                </div>
+                </a>
 
 
-                <!-- ROBLOX -->
-                <div class="game-card">
+                <!-- Roblox -->
+                <a
+                    href="https://www.roblox.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="game-card"
+                >
 
-                    <div class="game-image roblox-image">
-                        <img src="assets/roblox.png" alt="Roblox">
+                    <div class="game-image">
+                        <img
+                            src="assets/roblox.png"
+                            alt="Roblox"
+                        >
                     </div>
 
-                    <div class="game-content">
-                        <span class="game-number">02</span>
+                    <div class="game-info">
 
-                        <h3>Roblox</h3>
+                        <div class="game-number">
+                            02
+                        </div>
 
-                        <p>
-                            Play different experiences,
-                            compete and hang out together.
-                        </p>
+                        <div>
+                            <h3>Roblox</h3>
 
-                        <span class="game-tag">ROBLOX</span>
+                            <p>
+                                Games · Events · Community
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">↗</span>
+
                     </div>
 
-                </div>
+                </a>
 
             </div>
 
@@ -162,34 +211,54 @@
 
 
         <!-- ABOUT -->
-        <section class="section about-section" id="about">
+        <section class="about section" id="about">
 
-            <div class="about-content">
+            <div class="section-label">
+                02 / ABOUT
+            </div>
 
-                <div class="section-heading left">
-                    <span class="section-label">WHO WE ARE</span>
-                    <h2>Built to play.<br>Made together.</h2>
-                </div>
+            <div class="about-layout">
 
-                <div class="about-text">
+                <h2>
+                    More than<br>
+                    just a <span>clan.</span>
+                </h2>
 
-                    <p>
-                        YOUR CLAN is a gaming community focused on
-                        Minecraft and Roblox.
+                <div class="about-copy">
+
+                    <p class="large-text">
+                        Celestial Rabid — usually just called
+                        <strong>Rabid</strong> — is a gaming
+                        community centered around Minecraft
+                        and Roblox.
                     </p>
 
                     <p>
-                        Whether you're here to play, compete,
-                        make friends, or just chill, everyone
-                        starts in the same place.
+                        We play together, meet new people,
+                        compete, create things and spend time
+                        doing what we enjoy.
                     </p>
 
-                    <div class="about-line"></div>
+                    <div class="mini-line"></div>
 
-                    <span class="about-note">
-                        No complicated requirements.
-                        Just apply and get involved.
-                    </span>
+                    <div class="about-details">
+
+                        <div>
+                            <span>NAME</span>
+                            <strong>Celestial Rabid</strong>
+                        </div>
+
+                        <div>
+                            <span>KNOWN AS</span>
+                            <strong>Rabid</strong>
+                        </div>
+
+                        <div>
+                            <span>GAMES</span>
+                            <strong>Minecraft · Roblox</strong>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -199,32 +268,38 @@
 
 
         <!-- APPLY -->
-        <section class="apply-section" id="apply">
+        <section class="join section">
 
-            <div class="apply-box">
+            <div class="join-card">
 
-                <span class="section-label">READY?</span>
+                <div class="join-glow"></div>
 
-                <h2>Join the clan.</h2>
+                <div class="join-content">
 
-                <p>
-                    Applications are required to join.
-                    Head over to our Discord and submit yours.
-                </p>
+                    <div class="section-label">
+                        03 / JOIN
+                    </div>
 
-                <a
-                    href="https://discord.gg/qn4JeJ3TMW"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="primary-button large"
-                >
-                    Apply through Discord
-                    <span>→</span>
-                </a>
+                    <h2>
+                        Ready to join <span>Rabid?</span>
+                    </h2>
 
-                <div class="discord-note">
-                    <span class="discord-dot"></span>
-                    Discord application required
+                    <p>
+                        Applications are required.
+                        Join our Discord and apply to become
+                        part of the clan.
+                    </p>
+
+                    <a
+                        href="https://discord.gg/qn4JeJ3TMW"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button primary"
+                    >
+                        Apply on Discord
+                        <span>↗</span>
+                    </a>
+
                 </div>
 
             </div>
@@ -237,16 +312,22 @@
     <!-- FOOTER -->
     <footer>
 
-        <div class="footer-container">
+        <div class="footer-main">
 
-            <div class="footer-brand">
-                <img src="assets/logo.png" alt="Clan Logo">
-                <span>YOUR CLAN</span>
-            </div>
+            <a href="#home" class="footer-brand">
 
-            <p>
-                Minecraft × Roblox Gaming Community
-            </p>
+                <img
+                    src="assets/logo.png"
+                    alt="RABID Logo"
+                >
+
+                <div>
+                    <strong>RABID</strong>
+                    <span>Celestial Rabid</span>
+                </div>
+
+            </a>
+
 
             <a
                 href="https://discord.gg/qn4JeJ3TMW"
@@ -254,20 +335,28 @@
                 rel="noopener noreferrer"
                 class="footer-discord"
             >
-                Discord ↗
+                Join Discord ↗
             </a>
 
         </div>
 
+
         <div class="footer-bottom">
-            <span>© 2026 YOUR CLAN</span>
-            <span>All rights reserved.</span>
+
+            <span>
+                © 2026 Celestial Rabid
+            </span>
+
+            <span>
+                Minecraft × Roblox
+            </span>
+
         </div>
 
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
