@@ -4,86 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Celestial Rabid — Minecraft × Roblox</title>
-    <meta name="description" content="Celestial Rabid is a Minecraft and Roblox gaming community. Join Rabid, play with friends, participate, and grow with the community.">
+    <title>Celestial Rabid</title>
+
+    <meta
+        name="description"
+        content="Celestial Rabid — A Minecraft and Roblox gaming community."
+    >
 
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Background -->
     <div class="background">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="orb orb-three"></div>
-        <div class="grid"></div>
+
+        <div class="glow glow-purple"></div>
+        <div class="glow glow-blue"></div>
+        <div class="glow glow-cyan"></div>
+
+        <div class="stars"></div>
+
     </div>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
 
-            <a href="#home" class="brand">
-                <img src="assets/logo.png" alt="Celestial Rabid Logo">
-                <span>RABID</span>
+    <!-- Main -->
+    <main class="page">
+
+        <!-- Navbar -->
+        <header class="navbar">
+
+            <a href="#" class="brand">
+
+                <div class="brand-logo">
+                    <img src="assets/logo.png" alt="Celestial Rabid">
+                </div>
+
+                <div class="brand-text">
+                    <strong>RABID</strong>
+                    <span>CELESTIAL</span>
+                </div>
+
             </a>
 
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#games">Games</a>
-                <a href="#community">Community</a>
-                <a href="#join">Join</a>
-            </nav>
 
             <a
                 href="https://discord.gg/qn4JeJ3TMW"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="nav-discord"
+                class="discord-top"
             >
+                <span class="discord-dot"></span>
                 Discord
+                <span class="arrow">↗</span>
             </a>
 
-            <button class="menu-button" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-        </div>
-    </header>
+        </header>
 
 
-    <main>
+        <!-- Main Content -->
+        <section class="main-content">
 
-        <!-- HERO -->
-        <section class="hero section" id="home">
-
-            <div class="hero-content reveal">
+            <!-- Left -->
+            <div class="hero">
 
                 <div class="eyebrow">
-                    <span class="eyebrow-dot"></span>
+                    <span></span>
                     CELESTIAL RABID
                 </div>
 
+
                 <h1>
-                    <span>RABID</span>
-                    <small>MINECRAFT × ROBLOX</small>
+                    <span class="gradient-text">RABID</span>
                 </h1>
 
-                <p class="hero-text">
+
+                <div class="game-line">
+                    MINECRAFT
+                    <b>×</b>
+                    ROBLOX
+                </div>
+
+
+                <p class="description">
                     A gaming community built around Minecraft, Roblox,
                     friends, competition, creativity, and good times.
-                    Find your place and become part of Rabid.
+                    Join the community and find your place in Rabid.
                 </p>
 
-                <div class="hero-buttons">
+
+                <div class="buttons">
 
                     <a
                         href="https://discord.gg/qn4JeJ3TMW"
@@ -92,442 +112,73 @@
                         class="button primary"
                     >
                         Join Discord
-                        <span>→</span>
+                        <span>↗</span>
                     </a>
 
-                    <a href="#about" class="button secondary">
-                        Explore Rabid
-                        <span>↓</span>
-                    </a>
-
-                </div>
-
-                <div class="hero-note">
-                    <span>●</span>
-                    Applications are handled through Discord
-                </div>
-
-            </div>
-
-            <div class="hero-visual reveal">
-
-                <div class="hero-card">
-
-                    <div class="hero-card-top">
-                        <span class="status">
-                            <i></i> COMMUNITY
-                        </span>
-
-                        <span class="hero-card-mark">R</span>
-                    </div>
-
-                    <div class="hero-card-logo">
-                        <img src="assets/logo.png" alt="Rabid">
-                    </div>
-
-                    <div class="hero-card-bottom">
-                        <div>
-                            <strong>CELESTIAL</strong>
-                            <span>RABID</span>
-                        </div>
-
-                        <span class="card-arrow">↗</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="section about-section" id="about">
-
-            <div class="section-heading reveal">
-
-                <div class="section-label">
-                    <span>01</span>
-                    ABOUT RABID
-                </div>
-
-                <h2>
-                    More than just<br>
-                    <span>a gaming clan.</span>
-                </h2>
-
-            </div>
-
-            <div class="about-content">
-
-                <div class="about-text reveal">
-
-                    <p class="large-text">
-                        Celestial Rabid is a gaming community built around
-                        Minecraft, Roblox, and the people who play them.
-                    </p>
-
-                    <p>
-                        Whether you're here to play, compete, create,
-                        meet new people, or simply hang out with friends,
-                        Rabid is a place to do it together.
-                    </p>
-
-                    <p>
-                        Join the Discord, get involved, and help build
-                        something that feels like a community rather than
-                        just another server.
-                    </p>
-
-                </div>
-
-                <div class="about-points reveal">
-
-                    <div class="info-point">
-                        <span>01</span>
-                        <div>
-                            <strong>PLAY TOGETHER</strong>
-                            <p>Jump into games and enjoy them with the community.</p>
-                        </div>
-                    </div>
-
-                    <div class="info-point">
-                        <span>02</span>
-                        <div>
-                            <strong>MEET PEOPLE</strong>
-                            <p>Make friends and find people who enjoy the same games.</p>
-                        </div>
-                    </div>
-
-                    <div class="info-point">
-                        <span>03</span>
-                        <div>
-                            <strong>GROW TOGETHER</strong>
-                            <p>Participate, contribute, and help Rabid grow.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- GAMES -->
-        <section class="section games-section" id="games">
-
-            <div class="section-heading centered reveal">
-
-                <div class="section-label">
-                    <span>02</span>
-                    OUR GAMES
-                </div>
-
-                <h2>
-                    Two games.<br>
-                    <span>One community.</span>
-                </h2>
-
-                <p>
-                    Minecraft and Roblox are where Rabid comes together.
-                </p>
-
-            </div>
-
-            <div class="games-grid">
-
-                <!-- Minecraft -->
-                <article class="game-card reveal">
-
-                    <div class="game-image">
-                        <img src="assets/minecraft.png" alt="Minecraft">
-
-                        <div class="game-overlay"></div>
-
-                        <div class="game-number">01</div>
-
-                        <div class="game-title">
-                            <span>GAME</span>
-                            <h3>MINECRAFT</h3>
-                        </div>
-                    </div>
-
-                    <div class="game-info">
-
-                        <p>
-                            Survival, PvP, building, grinding, and
-                            whatever adventure comes next.
-                        </p>
-
-                        <div class="game-tags">
-                            <span>Survival</span>
-                            <span>PvP</span>
-                            <span>Community</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Roblox -->
-                <article class="game-card reveal">
-
-                    <div class="game-image">
-                        <img src="assets/roblox.png" alt="Roblox">
-
-                        <div class="game-overlay"></div>
-
-                        <div class="game-number">02</div>
-
-                        <div class="game-title">
-                            <span>GAME</span>
-                            <h3>ROBLOX</h3>
-                        </div>
-                    </div>
-
-                    <div class="game-info">
-
-                        <p>
-                            Discover different games, compete with friends,
-                            and find something new to play.
-                        </p>
-
-                        <div class="game-tags">
-                            <span>Games</span>
-                            <span>Fun</span>
-                            <span>Friends</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- COMMUNITY -->
-        <section class="section community-section" id="community">
-
-            <div class="section-heading reveal">
-
-                <div class="section-label">
-                    <span>03</span>
-                    COMMUNITY
-                </div>
-
-                <h2>
-                    Find something<br>
-                    <span>to be part of.</span>
-                </h2>
-
-            </div>
-
-            <div class="community-grid">
-
-                <div class="community-card reveal">
-                    <div class="community-icon">✦</div>
-                    <h3>PLAY</h3>
-                    <p>
-                        Play Minecraft and Roblox with people from
-                        the Rabid community.
-                    </p>
-                </div>
-
-                <div class="community-card reveal">
-                    <div class="community-icon">↗</div>
-                    <h3>COMPETE</h3>
-                    <p>
-                        Challenge your friends, participate in activities,
-                        and test your skills.
-                    </p>
-                </div>
-
-                <div class="community-card reveal">
-                    <div class="community-icon">＋</div>
-                    <h3>CREATE</h3>
-                    <p>
-                        Share your builds, ideas, content, and creations
-                        with everyone.
-                    </p>
-                </div>
-
-                <div class="community-card reveal">
-                    <div class="community-icon">◎</div>
-                    <h3>HANG OUT</h3>
-                    <p>
-                        Talk, chill, share memes, and spend time
-                        with the community.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <!-- Discord -->
-            <div class="discord-box reveal">
-
-                <div class="discord-content">
-
-                    <div class="discord-icon">
-                        <span>◉</span>
-                    </div>
-
-                    <div>
-                        <span class="small-label">OUR COMMUNITY HUB</span>
-
-                        <h3>
-                            Everything starts<br>
-                            on Discord.
-                        </h3>
-
-                        <p>
-                            Join the server to meet the community,
-                            see requirements, apply, volunteer,
-                            participate, and stay connected.
-                        </p>
-                    </div>
-
-                </div>
-
-                <a
-                    href="https://discord.gg/qn4JeJ3TMW"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button primary"
-                >
-                    Open Discord
-                    <span>↗</span>
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- REQUIREMENTS -->
-        <section class="section requirements-section">
-
-            <div class="requirements-layout">
-
-                <div class="section-heading reveal">
-
-                    <div class="section-label">
-                        <span>04</span>
-                        GET INVOLVED
-                    </div>
-
-                    <h2>
-                        Want a role?<br>
-                        <span>Want to help?</span>
-                    </h2>
-
-                </div>
-
-                <div class="requirements-text reveal">
-
-                    <p class="large-text">
-                        Read the requirements in our Discord
-                        to see how you can get involved.
-                    </p>
-
-                    <p>
-                        Some community roles and volunteer opportunities
-                        have their own requirements. Everything you need
-                        to know can be found inside the Discord.
-                    </p>
 
                     <a
                         href="https://discord.gg/qn4JeJ3TMW"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-link"
+                        class="button secondary"
                     >
-                        Read Discord Requirements
-                        <span>↗</span>
+                        Read Requirements
                     </a>
 
                 </div>
 
-            </div>
 
-
-            <div class="role-grid">
-
-                <div class="role-card reveal">
-                    <span class="role-number">01</span>
-                    <div>
-                        <h3>COMMUNITY ROLES</h3>
-                        <p>
-                            Participate and meet the requirements
-                            for available community roles.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="role-card reveal">
-                    <span class="role-number">02</span>
-                    <div>
-                        <h3>VOLUNTEER</h3>
-                        <p>
-                            Want to help Rabid? Check Discord for
-                            volunteer opportunities and requirements.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="role-card reveal">
-                    <span class="role-number">03</span>
-                    <div>
-                        <h3>PARTICIPATE</h3>
-                        <p>
-                            Get involved in the community and
-                            contribute to the clan.
-                        </p>
-                    </div>
+                <div class="small-note">
+                    <span class="live-dot"></span>
+                    Applications & volunteering are handled through Discord
                 </div>
 
             </div>
 
-        </section>
+
+            <!-- Right -->
+            <div class="visual">
+
+                <div class="logo-card">
+
+                    <div class="card-top">
+
+                        <span>CR</span>
+
+                        <div class="card-status">
+                            <i></i>
+                            COMMUNITY
+                        </div>
+
+                    </div>
 
 
-        <!-- INVITE -->
-        <section class="section invite-section">
+                    <div class="logo-wrapper">
 
-            <div class="invite-box reveal">
+                        <div class="logo-ring ring-one"></div>
+                        <div class="logo-ring ring-two"></div>
 
-                <div class="invite-glow"></div>
+                        <img
+                            src="assets/logo.png"
+                            alt="Celestial Rabid Logo"
+                            class="main-logo"
+                        >
 
-                <div class="invite-content">
+                    </div>
 
-                    <span class="section-label">
-                        05 · BRING YOUR FRIENDS
-                    </span>
 
-                    <h2>
-                        Rabid is better<br>
-                        <span>with friends.</span>
-                    </h2>
+                    <div class="card-bottom">
 
-                    <p>
-                        Know someone who plays Minecraft or Roblox?
-                        Invite them to the community and build
-                        something together.
-                    </p>
+                        <div>
+                            <span>CELESTIAL</span>
+                            <strong>RABID</strong>
+                        </div>
 
-                    <a
-                        href="https://discord.gg/qn4JeJ3TMW"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="button primary large-button"
-                    >
-                        Invite Your Friends
-                        <span>↗</span>
-                    </a>
+                        <div class="card-symbol">
+                            ✦
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -536,130 +187,108 @@
         </section>
 
 
-        <!-- HOW TO JOIN -->
-        <section class="section join-section" id="join">
+        <!-- Bottom Information -->
+        <section class="bottom-area">
 
-            <div class="section-heading centered reveal">
 
-                <div class="section-label">
-                    <span>06</span>
-                    HOW TO JOIN
+            <!-- Games -->
+            <div class="games">
+
+                <div class="game-box">
+
+                    <div class="game-icon minecraft-icon">
+                        <img
+                            src="assets/minecraft.png"
+                            alt="Minecraft"
+                        >
+                    </div>
+
+                    <div class="game-info">
+                        <span>GAME</span>
+                        <strong>Minecraft</strong>
+                    </div>
+
                 </div>
 
-                <h2>
-                    Your next step<br>
-                    <span>starts here.</span>
-                </h2>
+
+                <div class="game-box">
+
+                    <div class="game-icon roblox-icon">
+                        <img
+                            src="assets/roblox.png"
+                            alt="Roblox"
+                        >
+                    </div>
+
+                    <div class="game-info">
+                        <span>GAME</span>
+                        <strong>Roblox</strong>
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <div class="steps">
+            <!-- Community Info -->
+            <div class="quick-info">
 
-                <div class="step reveal">
-                    <div class="step-number">01</div>
+                <div class="quick-item">
+                    <span class="quick-icon">＋</span>
 
                     <div>
-                        <h3>JOIN DISCORD</h3>
-                        <p>
-                            Enter the Celestial Rabid Discord community.
-                        </p>
+                        <strong>INVITE FRIENDS</strong>
+                        <p>Bring your friends into Rabid.</p>
                     </div>
                 </div>
 
-                <div class="step reveal">
-                    <div class="step-number">02</div>
+
+                <div class="quick-item">
+                    <span class="quick-icon">✦</span>
 
                     <div>
-                        <h3>READ THE REQUIREMENTS</h3>
-                        <p>
-                            Check the information and requirements
-                            before applying or volunteering.
-                        </p>
+                        <strong>GET INVOLVED</strong>
+                        <p>Read Discord requirements for roles.</p>
                     </div>
                 </div>
 
-                <div class="step reveal">
-                    <div class="step-number">03</div>
+
+                <div class="quick-item">
+                    <span class="quick-icon">↗</span>
 
                     <div>
-                        <h3>GET INVOLVED</h3>
-                        <p>
-                            Apply, volunteer, participate, or simply
-                            start playing with the community.
-                        </p>
+                        <strong>VOLUNTEER</strong>
+                        <p>Help the community grow.</p>
                     </div>
                 </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- FINAL CTA -->
-        <section class="final-cta section">
-
-            <div class="final-content reveal">
-
-                <span class="final-eyebrow">
-                    CELESTIAL RABID
-                </span>
-
-                <h2>
-                    READY TO<br>
-                    <span>JOIN RABID?</span>
-                </h2>
-
-                <p>
-                    Minecraft × Roblox · Community · Friends
-                </p>
-
-                <a
-                    href="https://discord.gg/qn4JeJ3TMW"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button primary large-button"
-                >
-                    Join the Discord
-                    <span>↗</span>
-                </a>
 
             </div>
 
         </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <span>
+                © 2026 Celestial Rabid
+            </span>
+
+            <span class="footer-center">
+                MINECRAFT × ROBLOX
+            </span>
+
+            <a
+                href="https://discord.gg/qn4JeJ3TMW"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Join Rabid ↗
+            </a>
+
+        </footer>
 
     </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-container">
-
-            <div class="footer-brand">
-                <img src="assets/logo.png" alt="Rabid Logo">
-
-                <div>
-                    <strong>CELESTIAL RABID</strong>
-                    <span>Minecraft × Roblox</span>
-                </div>
-            </div>
-
-            <div class="footer-right">
-                <a
-                    href="https://discord.gg/qn4JeJ3TMW"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Discord ↗
-                </a>
-
-                <span>© 2026 Rabid</span>
-            </div>
-
-        </div>
-
-    </footer>
 
 
     <script src="script.js"></script>
